@@ -1,0 +1,8 @@
+{
+  "label": "Unauthorized",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "API ในหมวดนี้สามารถ request ได้โดยไม่จำเป็นต้องมี Token"
+  }
+}
