@@ -1,0 +1,9 @@
+{
+  "label": "Authorized",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "API ในหมวดนี้ ทุกครั้งที่จะทำการ Request จะต้องส่ง jwt token ที่ได้จากการ login มาด้วยทุกเครื่อง
+                    เพื่อตรวจสอบ user ที่ login เข้ามานั้น สามารถใช้ request ที่จะเรียกใช้ได้หรือไม่"
+  }
+}

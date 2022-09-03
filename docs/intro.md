@@ -2,46 +2,22 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# API Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Barin API Documents.**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+เริ่มต้นจากเราจะแบ่งประเภท API ออกเป็น 2 ประเภทใหญ่ๆ คือ
+- `Unautorized` เป็น API ที่ไม่จำเป็นต้องมีการ login เข้ามาในระบบ ก็สามารถเรียกใช้ได้
+- `Auth` เป็น API ที่จำเป็นต้องส่ง token ทุกครั้งที่ทำการ request กล่าวคือ ต้องมีการ login เพื่อ check role ของ user ด้วยว่ามีสิทธิ์เรียกใช้งาน endpoint ดังกล่าวหรือไม่ โดย endpoint ของ API ประเภทนี้จะขึ้นต้นด้วย `/auth` โดย roles ที่มีอยู่ในระบบจะมีอยู่ทั้งหมด 4 แบบ นั่นคือ
+  - `host` หรือชื่อตามเอกสารคือ `System admin` มีสิทธิ์จัดการได้ทุกอย่างในระบบ
+  - `admin` หรือชื่อตามเอกสารคือ `School admin` มีสิทธิ์ทั้งหมด **ภายในโรงเรียนของตนเอง**
+  - `teacher` หรืออาจารย์ มีสิทธิ์ในการจัดการข้อมูลวิชาที่ตนเองเป็นผู้สอน
+  - `student` หรือนักเรียน มีสิทธิ์ในการลงทะเบียนเรียน/ยกเลิกการลงทะเบียน รีวิวรายวิชาที่ผ่านมาแล้ว ภายในช่วงเวลาที่กำหนด
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Base URL
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Staging](https://barin-backend-staging.herokuapp.com/) Function ค่อนข้างจะล่าสุดกว่า แต่อาจมี bug อยู่
+- [Production](https://barin-backend.herokuapp.com/) Function ภายใน branch นี้ ยืนยันแล้วว่าสามารถใข้ได้จริง
+ 
