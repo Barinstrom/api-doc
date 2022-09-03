@@ -1,0 +1,9 @@
+{
+    "label": "คำสั่งสำหรับ System_admin เท่านั้น",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "คำสั่งในหมวดนี้ system admin จะใช้ได้เพียงคนเดียวเท่านั้น"
+    }
+  }
+  
