@@ -21,15 +21,6 @@ sidebar_position: 2
 ```json title="Response"
 {
   "success": true,
-  "data": {
-    "email": "negomor671@xitudy.com",
-    "school": "promma",
-    "password": "$2a$10$AFnxU5sCXeuHCljSDDNviePPrl17OIuhpKQuen7t13xuqwFeafYQm",
-    "role": "admin",
-    "status": "Pending",
-    "confirmationCode": "vXJTtyZGDZMmputizRX2qr4ew",
-    "_id": "6310c1835c4f87dc9e92875a",
-    "__v": 0
-  }
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzEzMTYxMDVhNjRiNWJhODBkZDg2NzEiLCJlbWFpbCI6Im1hc2lkaXY5OTlAeGl0dWR5LmNvbSIsInNjaG9vbCI6ImhvcndhbmciLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUiLCJfX3YiOjAsImlhdCI6MTY2MjE5ODY1NiwiZXhwIjoxNjYyMjAyMjU2fQ.iTOxD59q1pdJQIeaWMU27qixLPhGNqCotNB-F-n1ZU8"
 }
 ```
