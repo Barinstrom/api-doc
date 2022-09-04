@@ -5,7 +5,7 @@ slug: /
 
 # API Intro
 
-Let's discover **Barin API Documents.**.
+Let's discover **Barin API Documents.**
 
 ## Getting Started
 

@@ -16,7 +16,9 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Request"
 {
-    "email": "negomor671@xitudy.com",
+  "newPassword" : "test",
+  "confirmNewPassword" : "test",
+  "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5lZ29tb3I2NzFAeGl0dWR5LmNvbSIsImlhdCI6MTY2MjEzNDA5OCwiZXhwIjoxNjYyMTM0OTk4fQ.9Cc-i-SIEfiKcw32km_hPvXnGuOSqKHjQlpPHLTuYVw"
 }
 ```
 
