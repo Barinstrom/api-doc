@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# /auth/:schoolID/addteacherone
+# /:schoolID/add-teacher
 
 
 ใช้สำหรับการสร้าง user ที่มี role เป็น teacher ใน school ที่ระบุใน path parameter/variable :/school หนึ่งคน และทำการส่ง activate token ไปทาง email ที่ได้ระบุไว้ โดยคนที่มีสิทธิ์การใช้จะมีเพียง user ที่มี role เป็น school admin ของโรงเรียนนั้น และ system admin เท่านั้น

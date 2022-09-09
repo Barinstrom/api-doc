@@ -2,10 +2,10 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/getallteacher
+# /:schoolID/teachers
 
 
-ใช้เรียกข้อมูล teacher ทั้งหมด
+ใช้เรียกข้อมูล teacher ทั้งหมด โดยsearchตามschoolID
 
 
 

@@ -2,11 +2,10 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/getallstudent
+# /:schoolID/students
 
 
-ใช้เรียกข้อมูล student ทั้งหมด
-
+ใช้เรียกข้อมูล student ทั้งหมด โดยsearchตามschoolID
 
 
 **Method** `GET`

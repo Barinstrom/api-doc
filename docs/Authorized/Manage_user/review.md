@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 12
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# /auth/:schoolID/review
+# /:schoolID/review
 
 
 ใช้เพิ่ม review ชุมนุมที่ตนเองได้ผ่านการเรียนมาแล้ว โดยระบบจะทำการตรวจสอบเองว่านักเรียนคนดังกล่าวสามาถ review วิชาที่กำลังจะ review ได้หรือไม่

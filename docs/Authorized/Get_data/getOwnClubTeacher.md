@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/getclub
+# /:schoolID/teacher/ownclubs
 
 
 ใช้เรียกชุมนุมที่ตนเองลงทะเบียนสำเร็จ
@@ -11,7 +11,7 @@ sidebar_position: 2
 
 **Method** `GET`
 
-**Role ที่ใช้ได้** `student`
+**Role ที่ใช้ได้** `teacher`
 
 **content-type** `application/json`
 
@@ -19,7 +19,7 @@ sidebar_position: 2
 
 **Response**
 
-ส่งมาเป็น list ของ `body ของ club` ที่นักเรียนได้ลงทะเบียนสำเร็จ
+ส่งมาเป็น list ของ `body` ของ `club` ที่นักเรียนได้ลงทะเบียนสำเร็จ
 
 ```json title="Response (Parginate)"
 {

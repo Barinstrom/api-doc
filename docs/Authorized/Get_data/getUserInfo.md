@@ -2,14 +2,14 @@
 sidebar_position: 1
 ---
 
-# /auth/:schoolID
+# /:schoolID/user
 
 
 ใช้สำหรับการดูข้อมูลส่วนตัวของแต่ละ User
 
 **Method** `GET`
 
-**Role ที่ใช้ได้** system admin, teacher, student
+**Role ที่ใช้ได้** `system admin`, `teacher`, `student`
 
 **content-type** `application/json`
 

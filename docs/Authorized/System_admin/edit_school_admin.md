@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/edit
+# /schools/:schoolID/edit
 
 
-ใช้สำหรับแก้ไขข้อมูลของ school admin
+ใช้สำหรับแก้ไขข้อมูลของ school admin 
 
-**Method** `POST`
+**Method** `PATCH`
 
 **Role ที่ใช้ได้** `system admin`
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    สามารถแก้ไขรายละเอียดของ school admin ได้    
+    สามารถแก้ไขรายละเอียดของ school admin ได้
 }
 ```
 

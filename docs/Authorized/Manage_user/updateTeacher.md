@@ -1,13 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 6
 ---
 
-# /auth/:schoolID/updateteacher
+# /:schoolID/update-teacher
 
 
 ใช้สำหรับการ update ข้อมูล teacher
 
-**Method** `PUT`
+**Method** `PATCH`
 
 **Role ที่ใช้ได้** `school admin` , `system admin`
 

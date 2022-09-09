@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/craeteone
+# /:schoolID/add-club
 
 ใช้สำหรับการเพิ่มชมรมเพียง 1 ชมรม ในกรณีที่จะต้องทำการสร้างเพิ่มเติม
 

@@ -1,13 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 
-# /auth/:schoolID/updateclub
+# /:schoolID/update-club
 
 
 ใช้สำหรับการเปลี่ยนแปลงค่าในชมรม ในที่นี้คือสามารถระบุเจาะจงได้ว่าจะ update ค่าข้อมูลชมรมใด update ค่าใดบ้าง
 
-**Method** `PUT`
+**Method** `PATCH`
 
 **Role ที่ใช้ได้** `teacher` , `system admin`
 

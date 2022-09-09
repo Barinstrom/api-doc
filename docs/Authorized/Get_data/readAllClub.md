@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /auth/:schoolID/readclub
+# /:schoolID/clubs
 
 
 ใช้สำหรับดูว่าโรงเรียนที่สังกัดมีชุมนุมใดบ้าง
@@ -20,7 +20,8 @@ sidebar_position: 2
 
 ```json title="Request (Parginate)"
 {
-  //ส่งเลขสำหรับ Pagination 
+  // ส่งเลขสำหรับ Pagination 
+  // query
 }
 ```
 

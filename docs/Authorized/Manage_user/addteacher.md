@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# /auth/:schoolID/addteacher
+# /:schoolID/add-teachers
 
 
 ใช้สำหรับการสร้าง user ที่มี role เป็น teacher ใน school ที่ระบุใน path parameter/variable :/school (หลายคน)โดยข้อมูลที่จะต้องส่งจะเป็น file csv (ข้อมูลที่อยู่ใน csv ของแต่ละคนจะเหมือนกับ request-body ของ addteacherone)และทำการส่ง activate token ไปทาง email ที่ได้ระบุไว้ โดยคนที่มีสิทธิ์การใช้จะมีเพียง user ที่มี role เป็น school admin ของโรงเรียนนั้น และ system admin เท่านั้น

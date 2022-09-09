@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# /auth/:schoolID/getpastclub
+# /:schoolID/student/pastclubs
 
 
 ใช้เรียกชุมนุมที่ตนเองผ่านการเรียนมาแล้ว (ได้รับเกรด ผ่าน มาแล้ว)

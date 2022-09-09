@@ -2,10 +2,10 @@
 sidebar_position: 2
 ---
 
-# /auth/not_approved
+# /schools/not-approved
 
 
-ใช้สำหรับการดึงทุกโรงเรียนที่ไม่ผ่านการ approve 
+ใช้สำหรับการดึงทุกโรงเรียนที่ไม่ผ่านการ approve โดยสามารถที่จะ search ได้ด้วย
 
 
 **Method** `GET`
@@ -16,7 +16,10 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    ส่งเลขเพจสำหรับ pagination
+    "page" : number,
+    "query" : {
+      "schoolName": string,
+    },
 }
 ```
 

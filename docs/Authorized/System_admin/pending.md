@@ -2,10 +2,10 @@
 sidebar_position: 2
 ---
 
-# /auth/pending
+# /schools/pending
 
 
-ใช้สำหรับการดึงทุกโรงเรียนที่อยู่ในสถานนะ pending 
+ใช้สำหรับการดึงทุกโรงเรียนที่อยู่ในสถานนะ pending โดยสามารถที่จะ search ได้ด้วย
 
 **Method** `GET`
 
@@ -15,7 +15,10 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    ส่งเลขเพจสำหรับ pagination
+    "page" : number,
+    "query" : {
+      "schoolName": string,
+    },
 }
 ```
 

@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# /auth/approved
+# /schools/approved
 
 
-ใช้สำหรับการดึงทุกโรงเรียนที่ผ่านการ approve 
+ใช้สำหรับการดึงทุกโรงเรียนที่ผ่านการ approve โดยสามารถที่จะ search ได้ด้วย
 
-**Method** `POST`
+**Method** `GET`
 
 **Role ที่ใช้ได้** `system admin`
 
@@ -15,12 +15,17 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    ส่งเลขเพจสำหรับ pagination
+    "page" : number,
+    "query" : {
+      "schoolName": string,
+    },
 }
 ```
 
 ```json title="Response"
 {
-  array list โรงเรียนทุกโรงเรียน ที่ approve
+  ชื่อรร email
+  
+  [array list โรงเรียนทุกโรงเรียน ที่ approve]
 }
 ```
