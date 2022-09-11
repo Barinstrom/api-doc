@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /schools/:schoolID/edit
+# /:schoolID/edit
 
 
 ใช้สำหรับแก้ไขข้อมูลของ school admin 
