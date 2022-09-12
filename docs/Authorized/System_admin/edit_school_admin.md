@@ -15,9 +15,9 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    email : "user@gmail.com",
-    password : "password",
-    tel : "0959608937"
+    "email" : "user@gmail.com",
+    "password" : "password",
+    "tel" : "0959608937"
 }
 ```
 
