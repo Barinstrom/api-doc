@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /:schoolID/edit
+# /:schoolID/edit_admin
 
 
 ใช้สำหรับแก้ไขข้อมูลของ school admin 
@@ -15,7 +15,9 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    สามารถแก้ไขรายละเอียดของ school admin ได้
+    email : "user@gmail.com",
+    password : "password",
+    tel : "0959608937"
 }
 ```
 
