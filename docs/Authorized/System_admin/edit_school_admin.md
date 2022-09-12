@@ -23,6 +23,6 @@ sidebar_position: 2
 
 ```json title="Response"
 {
-  การแก้ไขนั้น สำเร็จ, ไม่สำเร็จ, error ,
+  message "error or succes"
 }
 ```
