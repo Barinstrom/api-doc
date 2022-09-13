@@ -4,10 +4,10 @@ sidebar_position: 12
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# /:schoolID/review
+# /:schoolID/add-review
 
 
-ใช้เพิ่ม review ชุมนุมที่ตนเองได้ผ่านการเรียนมาแล้ว โดยระบบจะทำการตรวจสอบเองว่านักเรียนคนดังกล่าวสามาถ review วิชาที่กำลังจะ review ได้หรือไม่
+ใช้เพิ่ม review ชุมนุมที่ตนเองได้ผ่านการเรียนมาแล้ว โดยระบบจะทำการตรวจสอบเองว่า นักเรียนคนดังกล่าวผ่านการเรียนวิชาที่กำลังจะ review แล้วหรือ
 
 **Method** `POST`
 
@@ -17,8 +17,9 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Request"
 {
-    "clubID": string_of_clubID,
-    "message": "วิชานี้ดีมากเลยครับ",
+    "clubID" : "631c6e5cb0f33e324f1b1e3c",
+    "studentID" : "631ed901cbc23688f173c15f",
+    "textReview" : "วิชานี้ดีมากเลยครับ"
 }
 ```
 
@@ -35,7 +36,7 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "message": "Comment success.",
+  "success": true
 }
 ```
 </TabItem>
@@ -44,7 +45,7 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "message": "You are not allow to comment this subject.",
+  "error": "You are not allow to comment this subject."
 }
 ```
 </TabItem>

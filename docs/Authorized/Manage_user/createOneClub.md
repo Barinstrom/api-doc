@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # /:schoolID/add-club
 
@@ -18,22 +20,47 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    "clubName": "name",
+    "teacherID": "631c7471c729fbbe1a959b32",
+    "clubName": "club1",
+    "groupID": "1",
     "category": "science",
     "clubInfo": "lorem ipsum",
     "count": 0,
     "limit": 30,
-    "teacherID": "12345",
-    "year": 2565,
-    "schedule": "15:00-16:00",
-    "reviews":["reviews1",],
+    "schoolYear": 2565,
+    "schedule": ["15:00-16:00"],
+    "reviews":[],
     "picture": {"pictureID":123, "urlPicture":"www.abc.com/picture/download"}
-
 }
 ```
+
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
 
 ```json title="Response"
 {
-  "success": true,
+  "success": true
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "error": "Club name is already exists."
+}
+```
+</TabItem>
+
+</Tabs>
+
