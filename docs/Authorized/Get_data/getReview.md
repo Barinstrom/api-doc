@@ -75,7 +75,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "error message."
+  "success": false,
+  "message": "lorem ipsum"
 }
 ```
 </TabItem>

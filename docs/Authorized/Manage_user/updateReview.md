@@ -44,7 +44,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "You are not allow to edit this review."
+  "success": false,
+  "message": "You are not allow to edit this review."
 }
 ```
 </TabItem>

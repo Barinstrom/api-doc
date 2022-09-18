@@ -28,7 +28,6 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-
 <Tabs
   groupId="type"
   defaultValue="success"
@@ -51,7 +50,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "Club name is already exists."
+  "success": false,
+  "message": "Club name is already exists."
 }
 ```
 </TabItem>

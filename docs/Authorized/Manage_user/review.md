@@ -45,7 +45,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "You are not allow to comment this subject."
+  "success": false,
+  "message": "You are not allow to comment this subject."
 }
 ```
 </TabItem>
