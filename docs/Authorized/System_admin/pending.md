@@ -1,8 +1,10 @@
 ---
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# /schools/pending
+# /schools/pending?page=&query=
 
 
 ใช้สำหรับการดึงทุกโรงเรียนที่อยู่ในสถานนะ pending โดยสามารถที่จะ search ได้ด้วย
@@ -11,19 +13,59 @@ sidebar_position: 2
 
 **Role ที่ใช้ได้** `system admin`
 
-**content-type** `application/json`
-
-```json title="Request"
+```json title="query parameter"
 {
     "page" : number,
-    "query" : {
-      "schoolName": string,
-    },
+    "query" : string,
 }
 ```
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
 
 ```json title="Response"
 {
-  array list โรงเรียนทุกโรงเรียน ที่ pending
+  [array list โรงเรียนทุกโรงเรียน ที่ pending]
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
+
+```json title="Response"
+{
+  [array list โรงเรียนทุกโรงเรียน ที่ pending]
+}
+```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "Error cannot get data right now"
+}
+```
+</TabItem>
+
+</Tabs>

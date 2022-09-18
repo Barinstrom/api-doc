@@ -2,6 +2,9 @@
 sidebar_position: 10
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # /:schoolID/delete-clubs
 
 
@@ -15,14 +18,42 @@ sidebar_position: 10
 
 **content-type** `application/json`
 
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
+
 ```json title="Request"
 {
-    "clubIDs": [...clubID],
+    "clubs":[{"club1"},{"club2"}]
 }
 ```
 
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
+
 ```json title="Response"
 {
-  "success": true,
+  "success": true
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "lorem ipsum."
+}
+```
+</TabItem>
+
+</Tabs>

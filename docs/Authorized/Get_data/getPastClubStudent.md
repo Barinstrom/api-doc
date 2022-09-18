@@ -15,7 +15,9 @@ sidebar_position: 3
 
 **content-type** `application/json`
 
-
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
 
 **Response**
 
@@ -24,7 +26,6 @@ sidebar_position: 3
 ```json title="Response (Parginate)"
 {
   "clubs":[{"club1"},{"club2"}]
-  //เป็น list ของ club ในโรงเรียนนั้น ๆ 
 }
 ```
 

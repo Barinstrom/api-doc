@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 # /:schoolID/add-review
 
 
-ใช้เพิ่ม review ชุมนุมที่ตนเองได้ผ่านการเรียนมาแล้ว โดยระบบจะทำการตรวจสอบเองว่า นักเรียนคนดังกล่าวผ่านการเรียนวิชาที่กำลังจะ review แล้วหรือ
+ใช้เพิ่ม review ชุมนุมที่ตนเองได้ผ่านการเรียนมาแล้ว โดยระบบจะทำการตรวจสอบเองว่า นักเรียนคนดังกล่าวผ่านการเรียนวิชาที่กำลังจะ review แล้วหรือไม่
 
 **Method** `POST`
 
@@ -45,7 +45,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "You are not allow to comment this subject."
+  "success": false,
+  "message": "You are not allow to comment this subject."
 }
 ```
 </TabItem>

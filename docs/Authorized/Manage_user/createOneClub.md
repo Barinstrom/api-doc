@@ -6,17 +6,13 @@ import TabItem from '@theme/TabItem';
 
 # /:schoolID/add-club
 
-ใช้สำหรับการเพิ่มชมรมเพียง 1 ชมรม ในกรณีที่จะต้องทำการสร้างเพิ่มเติม
+ใช้สำหรับการเพิ่มชุมนุมเพียง 1 ชุมนุม 
 
 **Method** `POST`
 
-**Role ที่ใช้ได้** `teacher` , `system admin`
+**Role ที่ใช้ได้** `school admin` , `system admin`
 
 **content-type** `application/json`
-
-|PATH variable |Descripton|
-|-----|--------|
-|schoolID|เลข ID ของแต่ละโรงเรียน |
 
 ```json title="Request"
 {
@@ -25,15 +21,12 @@ import TabItem from '@theme/TabItem';
     "groupID": "1",
     "category": "science",
     "clubInfo": "lorem ipsum",
-    "count": 0,
     "limit": 30,
     "schoolYear": 2565,
     "schedule": ["15:00-16:00"],
-    "reviews":[],
     "picture": {"pictureID":123, "urlPicture":"www.abc.com/picture/download"}
 }
 ```
-
 
 <Tabs
   groupId="type"
@@ -57,10 +50,10 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "Club name is already exists."
+  "success": false,
+  "message": "Club name is already exists."
 }
 ```
 </TabItem>
 
 </Tabs>
-

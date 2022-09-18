@@ -9,11 +9,16 @@ import TabItem from '@theme/TabItem';
 
 ใช้แก้ไข review ของตนเอง
 
-**Method** `POST`
+**Method** `PATCH`
 
 **Role ที่ใช้ได้** `student`
 
 **content-type** `application/json`
+
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
+
 
 ```json title="Request"
 {
@@ -44,7 +49,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "You are not allow to edit this review."
+  "success": false,
+  "message": "You are not allow to edit this review."
 }
 ```
 </TabItem>
