@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /:schoolID/student/ownclub
+# /:schoolID/student/ownclubs
 
 
 ใช้เรียกชุมนุมที่ตนเองลงทะเบียนสำเร็จ
@@ -15,7 +15,9 @@ sidebar_position: 2
 
 **content-type** `application/json`
 
-
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
 
 **Response**
 
@@ -23,13 +25,7 @@ sidebar_position: 2
 
 ```json title="Response (Parginate)"
 {
-  //ข้อมูล club
-  "clubID": "ipsum",
-  "category":"ipsum",
-  "clubInfo":"ipsum",
-  "review":"ipsum",
-  "schedule":
-  
+  "clubs":[{"club1"},{"club2"}]
 }
 ```
 

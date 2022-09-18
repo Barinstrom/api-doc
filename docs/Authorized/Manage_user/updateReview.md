@@ -15,6 +15,11 @@ import TabItem from '@theme/TabItem';
 
 **content-type** `application/json`
 
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
+
+
 ```json title="Request"
 {
     "reviewID" : "631c7c2cb025fb720c3eafb9",
@@ -44,7 +49,8 @@ import TabItem from '@theme/TabItem';
 
 ```json title="Response"
 {
-  "error": "You are not allow to edit this review."
+  "success": false,
+  "message": "You are not allow to edit this review."
 }
 ```
 </TabItem>
