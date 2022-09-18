@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 **Role ที่ใช้ได้** `school admin` , `system admin`
 
 
-**content-type** `application/form-data`
+**content-type** `application/json`
 
 
 ```json title="Request"
