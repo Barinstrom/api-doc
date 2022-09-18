@@ -32,8 +32,6 @@ sidebar_position: 1
     "school": "promma",
     "role": "admin",
     "status": "Active",
-    "_id": "6310c1835c4f87dc9e92875a",
-    "__v": 0
   }
 }
 ```

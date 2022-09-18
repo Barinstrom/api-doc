@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # /:schoolID/add-student
 
 
@@ -25,13 +28,37 @@ sidebar_position: 1
     "enteredYear": "2560",
     "classYear": 3,
     "isActive": "active",
-    "tel": "0800000000",//optional
+    "tel": "0800000000",   //optional
 }
 ```
 
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
 
 ```json title="Response"
 {
   "success": true,
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "Lorem Ipsum",
+}
+```
+</TabItem>
+
+</Tabs>
