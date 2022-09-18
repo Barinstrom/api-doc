@@ -12,26 +12,9 @@ import TabItem from '@theme/TabItem';
 
 **Method** `GET`
 
-**Role ที่ใช้ได้** `system admin`, `teacher`, `student`
+**Role ที่ใช้ได้** `system admin`, `school admin`, `teacher`, `student`
 
 **content-type** `application/json`
-
-
-```json title="Response"
-{
-  "success": true,
-  "data": {
-    "email": "negomor671@xitudy.com",
-    "school": "promma",
-    "role": "admin",
-    "status": "Pending",
-    "confirmationCode": "vXJTtyZGDZMmputizRX2qr4ew",
-    "_id": "6310c1835c4f87dc9e92875a",
-    "__v": 0
-  }
-}
-```
-
 
 <Tabs
   groupId="type"

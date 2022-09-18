@@ -18,8 +18,8 @@ import TabItem from '@theme/TabItem';
 
 | key         | value       |
 | ----------- | ----------- |
-| page   | 1    |
-| query   |   |
+| page   | 1  |
+| query  | 2  | 
 
 <Tabs
   groupId="type"
