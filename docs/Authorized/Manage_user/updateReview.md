@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 ใช้แก้ไข review ของตนเอง
 
-**Method** `POST`
+**Method** `PATCH`
 
 **Role ที่ใช้ได้** `student`
 
