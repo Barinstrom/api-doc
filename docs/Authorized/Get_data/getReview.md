@@ -4,7 +4,7 @@ sidebar_position: 12
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# /:schoolID/get-review
+# /:schoolID/get-review?page=&clubID=
 
 
 ใช้เรียกข้อมูล review ทั้งหมด ของชุมนุมนั้น ๆ
@@ -13,9 +13,7 @@ import TabItem from '@theme/TabItem';
 
 **Role ที่ใช้ได้** `system admin`, `school admin`, `teacher`, `student`
 
-**content-type** `application/form-data`
-
-**Request**
+**query parameter**
 
 | key         | value       |
 | ----------- | ----------- |
