@@ -1,8 +1,6 @@
 ---
 sidebar_position: 2
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # /schools/approved?page=&query=
 
@@ -19,18 +17,6 @@ import TabItem from '@theme/TabItem';
     "query" : string,
 }
 ```
-
-
-<Tabs
-  groupId="type"
-  defaultValue="success"
-  values={[
-    { label: 'success', value: 'success', },
-    { label: 'fail', value: 'fail', }
-  ]
-}>
-
-<TabItem value="success">
 
 ```json title="Response"
 {
@@ -77,20 +63,3 @@ import TabItem from '@theme/TabItem';
 }
 }
 ```
-</TabItem>
-
-<TabItem value="fail">
-
-```json title="Response"
-{
-  "success": false,
-  "message": "Error cannot get data right now"
-}
-```
-</TabItem>
-
-</Tabs>
-
-
-
-

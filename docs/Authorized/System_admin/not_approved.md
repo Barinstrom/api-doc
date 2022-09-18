@@ -1,8 +1,6 @@
 ---
 sidebar_position: 2
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # /schools/not-approved?page=&query=
 
@@ -21,23 +19,8 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-
-<Tabs
-  groupId="type"
-  defaultValue="success"
-  values={[
-    { label: 'success', value: 'success', },
-    { label: 'fail', value: 'fail', }
-  ]
-}>
-
-<TabItem value="success">
-
 ```json title="Response"
 {
-<<<<<<< HEAD
-  [array list โรงเรียนทุกโรงเรียน ที่ not_approve]
-=======
   {
     "docs": [
         {
@@ -79,40 +62,5 @@ import TabItem from '@theme/TabItem';
     "prevPage": null,
     "nextPage": 2
 }
->>>>>>> b30d577ada66ba646e79a8d08131ed72f1607e59
 }
 ```
-</TabItem>
-
-<TabItem value="fail">
-
-
-<Tabs
-  groupId="type"
-  defaultValue="success"
-  values={[
-    { label: 'success', value: 'success', },
-    { label: 'fail', value: 'fail', }
-  ]
-}>
-
-<TabItem value="success">
-
-```json title="Response"
-{
-  [array list โรงเรียนทุกโรงเรียน ที่ not_approve]
-}
-```
-</TabItem>
-
-<TabItem value="fail">
-
-```json title="Response"
-{
-  "success": false,
-  "message": "Error cannot get data right now"
-}
-```
-</TabItem>
-
-</Tabs>
