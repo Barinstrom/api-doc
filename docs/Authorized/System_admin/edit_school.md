@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# /:schoolID/edit_admin
+# /:schoolID/edit
 
 
 ใช้สำหรับแก้ไขข้อมูลของ school admin 
@@ -15,14 +15,15 @@ sidebar_position: 2
 
 ```json title="Request"
 {
-    "email" : "user@gmail.com",
-    "password" : "password",
-    "tel" : "0959608937"
+      schoolName:"Jumpada",
+      urlLogo:"mylogo",
+      bgColor:"teal"
 }
 ```
 
 ```json title="Response"
 {
-  message "update email or password fail"
+  "success": false,
+  "message": "update fail"
 }
 ```

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # /schools/pending
 
@@ -22,8 +24,32 @@ sidebar_position: 2
 }
 ```
 
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
+
 ```json title="Response"
 {
-  array list โรงเรียนทุกโรงเรียน ที่ pending
+  [array list โรงเรียนทุกโรงเรียน ที่ pending]
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "Error cannot get data right now"
+}
+```
+</TabItem>
+
+</Tabs>

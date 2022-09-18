@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # /schools/approved
 
@@ -22,6 +24,18 @@ sidebar_position: 2
 }
 ```
 
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
+
 ```json title="Response"
 {
   ชื่อรร email
@@ -29,3 +43,20 @@ sidebar_position: 2
   [array list โรงเรียนทุกโรงเรียน ที่ approve]
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "Error cannot get data right now"
+}
+```
+</TabItem>
+
+</Tabs>
+
+
+
+
