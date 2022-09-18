@@ -5,7 +5,7 @@ sidebar_position: 3
 # /:schoolID/teacher/pastclubs
 
 
-ใช้เรียกชุมนุมที่ตนเองผ่านการเรียนมาแล้ว (ได้รับเกรด ผ่าน มาแล้ว)
+ใช้ดูชุมนุมที่ผ่านมาที่ตัวครูเคยเป็นที่ปรึกษา
 
 
 
@@ -15,16 +15,17 @@ sidebar_position: 3
 
 **content-type** `application/json`
 
-
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
 
 **Response**
 
-ส่งมาเป็น list ของ `body ของ club` ที่ตนเองผ่านการเรียนมาแล้ว
+ส่งมาเป็น list ของ `body` ของ `club` ที่ครูเคยเป็นที่ปรึกษา
 
 ```json title="Response (Parginate)"
 {
   "clubs":[{"club1"},{"club2"}]
-  //เป็น list ของ club ในโรงเรียนนั้น ๆ 
 }
 ```
 

@@ -2,6 +2,9 @@
 sidebar_position: 11
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # /:schoolID/set-schedule
 
 
@@ -13,6 +16,10 @@ sidebar_position: 11
 
 **content-type** `application/json`
 
+|PATH variable |Descripton|
+|-----|--------|
+|schoolID|เลข ID ของแต่ละโรงเรียน |
+
 ```json title="Request"
 {
     "schoolYear": "1995",
@@ -23,8 +30,32 @@ sidebar_position: 11
 }
 ```
 
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
+
 ```json title="Response"
 {
   "success": true
 }
 ```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "lorem ipsum."
+}
+```
+</TabItem>
+
+</Tabs>
