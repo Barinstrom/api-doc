@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # /schools/pending?page=&query=
 
@@ -11,16 +13,27 @@ sidebar_position: 2
 
 **Role ที่ใช้ได้** `system admin`
 
-```json title="query parameter"
-{
-    "page" : number,
-    "query" : string,
-}
-```
+**query parameter**
+
+| key         | value       |
+| ----------- | ----------- |
+| page   | 1    |
+| query   |   |
+
+<Tabs
+  groupId="type"
+  defaultValue="success"
+  values={[
+    { label: 'success', value: 'success', },
+    { label: 'fail', value: 'fail', }
+  ]
+}>
+
+<TabItem value="success">
 
 ```json title="Response"
+
 {
-  {
     "docs": [
         {
             "_id": "631c492bbcc0a793a998423e",
@@ -61,5 +74,19 @@ sidebar_position: 2
     "prevPage": null,
     "nextPage": 2
 }
+
+```
+</TabItem>
+
+<TabItem value="fail">
+
+```json title="Response"
+{
+  "success": false,
+  "message": "lorem ipsum",
 }
 ```
+</TabItem>
+
+</Tabs>
+
