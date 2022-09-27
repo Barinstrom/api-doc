@@ -12,13 +12,31 @@ sidebar_position: 6
 
 **content-type** `application/json`
 
-|PATH variable |Descripton|
-|-----|--------|
-|schoolID|เลข ID ของแต่ละโรงเรียน |
-
 ```json title="Request"
 {
-    "downloadlink":"www.def.com/download"
+    {
+    "teacherID": "631c7471c729fbbe1a959b32",
+    "clubName": "club1",
+    "groupID": "1",
+    "category": "science",
+    "clubInfo": "lorem ipsum",
+    "limit": 30,
+    "schoolYear": 2565,
+    "schedule": ["15:00-16:00"],
+    "picture": {"pictureID":123, "urlPicture":"www.abc.com/picture/download"}
+    },
+    {
+    "teacherID": "631c7471c729fbbe1a959b32",
+    "clubName": "club2",
+    "groupID": "2",
+    "category": "science",
+    "clubInfo": "lorem ipsum",
+    "limit": 30,
+    "schoolYear": 2565,
+    "schedule": ["15:00-16:00"],
+    "picture": {"pictureID":123, "urlPicture":"www.abc.com/picture/download"}
+    },
+
 }
 ```
 
